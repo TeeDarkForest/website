@@ -2,50 +2,54 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css"> <!-- bootstrap 5-->
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script> <!-- jQuery -->
+
+
+    <script>
+        $(document).ready(function(){
+            $("#devs").hide();
+            $("#showdev").click(function(){
+                $("#devs").show(500,"linear");
+            })
+        })
+    </script>
+
 	
 	<title>Teeworlds</title>	<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
+
+
+
 <body>
 
 
-<div id="outer">
+<div>		                                                                                    <!-- 主logo -->						
+	<a href="index.html"><img src="images/tulogo.png" alt="teeuniverse logo" /></a>
+</div>
 
-	<div id="top_left"><div id="top_right"><div id="top_mid">
+<button type="button" class="btn btn-primary"><a href="/forum/" style="text-decoration:none;" class="text-light display-6">论坛 - Forum</a> 
+</button>                                                                                       <!-- 论坛链接 -->
 
-										
-		<a href="index.html"><img src="images/tulogo.png" alt="teeuniverse logo" /></a>
-	</div></div></div>
-		<div id="menu_left"><div id="menu_right"><div id="menu_mid">
-			<div id="menu">
-				<ul>
-					<li ><a href="/forum/">论坛Forum</a></li>
-				</ul>
-			</div>
-		</div></div></div>
-			
-		
-		<div id="tlc"><div id="trc"><div id="tb">&nbsp;</div></div></div>
-		
-		<div id="lb"><div id="rb"><div id="mid">
+<br />
 
-		<div id="container">
-		
 
-<div style="float: left; padding: 20px 15px 0 15px;" >
-<img src="images/fm.png" alt="" />
+<div style="float: left; padding: 35px 15px 0 15px;" >                                          <!-- TDF宣传图 -->
+    <img src="images/fm.png" alt="TDF宣传图" /> 
 </div>
 
 
+<div class="container-sm">                                                                      <!-- 介绍 -->
+    <h1 class="text-muted">TeeUniverse</h1>
+	<p class="text-muted"><em>TeeUniverse</em>是一个用于下载Teeworlds启动器的软件.</p>
 
-<div style="margin-left: 240px">
-	<h1>TeeUniverse</h1>
-	<p><em>TeeUniverse</em>是一个用于下载Teeworlds启动器的软件.</p>
-
-<p>同时内嵌了原版启动器以及同名的<a href="https://github.com/TeeDarkForest/TeeUniverse-Vanilla">TeeUniverse</a>地图编辑器,
+    <p class="text-muted">同时内嵌了原版启动器以及同名的<a href="https://github.com/TeeDarkForest/TeeUniverse-Vanilla" class="text-info">TeeUniverse</a>地图编辑器,
 在未来的很长一段时间里，本软件将持续更新直至FFS彻底死亡.</p>
 
-<p>这个项目包含3个内容:
+    <p class="text-muted">这个项目包含3个内容:
 地图编辑器, 游戏启动器以及服务器.
 在写下这个的时候，我们之完成了地图编辑器和游戏启动器的内容.
 目前你可以用新启动器制作大多数模式的地图，请享受新时代地图编辑器带来的便利吧
@@ -53,28 +57,50 @@
 缺点是代码贼难看懂（）
 </p>
 
-</p>本软件支持玩家下载或上传自制启动器。
+    <p class="text-muted">本软件支持玩家下载或上传自制启动器。
 玩家可从云端下载到我们精挑细选出来的游戏客户端，
 亦可上传自己自制或从某处找来的启动器。经过审核便可上传至云端任由其他玩家下载。
-</p>
+    </p>
+
 	<br/>
 	<br/>
-	<!-- <iframe width="560" height="360" src="//www.youtube-nocookie.com/embed/vtFf9Nam_Bw?rel=0" frameborder="0" allowfullscreen></iframe> -->
 	<br/>
 	<br/>
-	<div id="download_box">
+
+	<div>                                                                                           <!-- 下载口 -->
 		<img style="float:left; padding-right: 10px" src="images/dl_arrow.png" alt="download arrow" />
 		<span style="font-size: 16px; font-weight: bold;"><a href="/download">Download TeeUniverse Launcher for Windows</a></span><br/>
-		<span><a href="https://jq.qq.com/?_wv=1027&k=efwsF219">Communication group</a> | <a href="https://github.com/ST-Chara">ST-Chara</a></span>
+		<span><a href="https://jq.qq.com/?_wv=1027&k=efwsF219">QQ群 - Communication group</a>
 	</div>
 	<br/>
+
+    
+    <div>
+        <button id="showdev" class="text-white btn btn-info">点我显示制作人员名单</button>
+        <br/>
+        <br/>
+
+        <ul id="devs">
+
+            <li>
+                <a href="https://github.com/ST-Chara" id="devs">ST-Chara(FlowerFell-Sans)</a>
+                <p class="text-muted">主要开发人员</p>
+            </li>
+
+            <li>
+                <a href="https://github.com/xy-cloud-cn" id="devs">xy-cloud-cn(xy_cloud)</a>
+                <p class="text-muted">主要开发人员兼网站</p>
+            </li>
+
+            <li>
+                <a href="https://github.com/Ninecloud2077" id="devs">Ninecloud2077(Ninecloud)</a>
+                <p class="text-muted">网站</p>
+            </li>
+
+        </ul>
+    </div>
+
 </div>
 
-<div style="clear: both;">&nbsp;</div>
-<hr style="border: none; border-top: solid 1px #dbdbda;"/>
-
-
-<br/>
 </body>
-
 </html>
